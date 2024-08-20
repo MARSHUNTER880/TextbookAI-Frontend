@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textbook AI</title>
+    <title>Upload Text</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,9 +16,14 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <h2>Welcome to Textbook AI</h2>
-        <p>Your tool for turning textbook text into videos.</p>
-        <button onclick="location.href='upload.html'">Get Started</button>
+        <h2>Upload Text for Processing</h2>
+        <form id="uploadForm">
+            <div class="mb-3">
+                <label for="textInput" class="form-label">Enter your text</label>
+                <textarea class="form-control" id="textInput" rows="6" placeholder="Paste your text here"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <script src="scripts.js"></script>
 </body>
